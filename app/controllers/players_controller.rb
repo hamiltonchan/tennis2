@@ -1,0 +1,6 @@
+class PlayersController < ApplicationController
+
+
+
+
+end

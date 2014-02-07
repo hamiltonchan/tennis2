@@ -1,0 +1,49 @@
+// Place all the styles related to the courts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+	width: 500px;
+	color: green;
+	border: 1px solid black;
+}
+
+td {
+	width: 150px;
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	border-bottom: 1px solid black;
+}
+
+#notice {
+	color: orange;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.mini_column {
+	width: 75px;
+	color: blue;
+}
+
+.mini_column a {
+	text-decoration: none;
+}
+
+.mini_column a:visited {
+	color: blue;
+}
+
+.court_column a {
+	text-decoration: none;
+	color: green;
+}
+
+.court_column a:visited {
+	color: green;
+}

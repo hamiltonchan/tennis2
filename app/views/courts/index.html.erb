@@ -1,0 +1,26 @@
+<h1>Welcome to the Tennis Club!</h1>
+<br />
+<p id="notice"><%= notice %></p>
+<br />
+<table>
+	<thead>
+		<tr>
+			<th>Court Number</th>
+			<th>Status</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @courts.each do |court| %>
+			<tr>
+				<td class="court_column"><%= link_to "#{court.court_num}", court_path(court) %></td>
+				<td><%= court.booked ? "booked" : "open" %></td>
+				<td class="mini_column"><%= link_to 'Edit', edit_court_path(court) %></td>
+				<td class="mini_column"><%= link_to 'Remove', court, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+			</tr>
+		<% end %>	
+	</tbody>
+</table>
+<br />
+<%= link_to 'New Court', new_court_path %>

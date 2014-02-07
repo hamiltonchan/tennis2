@@ -1,0 +1,6 @@
+<h1>Court Info</h1>
+
+<p>Court number: <%= @court.court_num %></p>
+<p>Court status: <%= @court.booked ? "booked" : "open" %></p>
+
+<%= link_to 'Back', courts_path %>

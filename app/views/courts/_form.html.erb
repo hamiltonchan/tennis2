@@ -1,0 +1,12 @@
+<%= form_for @court do |f| %>
+<p>
+	<%= f.label :'Court number: ' %>
+	<%= f.text_field :court_num %>
+</p>
+<p>
+	<%= f.label :'Status: ' %>
+	<%= f.select :booked, [['booked', true], ['open', false]] %>
+</p>
+<br />
+<%= f.submit %>
+<% end %>
